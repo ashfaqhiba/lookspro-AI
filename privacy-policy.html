@@ -1,30 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Privacy Policy - LooksPro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - LooksPro</title>
+  <style>
+    /* ===== Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ===== Body ===== */
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, rgba(40,40,50,1) 0%, rgba(25,25,30,1) 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    /* ===== Glass Card ===== */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 40px 50px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Headings ===== */
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ff66b2, #66ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #fff;
+      border-left: 4px solid #66ccff;
+      padding-left: 10px;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    strong {
+      color: #ffb3ec;
+    }
+
+    a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Button ===== */
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      background: linear-gradient(90deg, #66ccff, #ff66b2);
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media (max-width: 600px) {
+      .glass-card {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Privacy Policy for LooksPro</h1>
+  <div class="glass-card">
+    <h1>Privacy Policy</h1>
     <p><strong>Last Updated:</strong> 2025</p>
     
     <h2>1. Information We Collect</h2>
-    <p>LooksPro respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. We collect photographs and selfies that you upload to the application, voice recordings that you create within the application, and usage data through Firebase Analytics. Payment information is processed securely through RevenueCat and we do not store payment details on our servers.</p>
+    <p>LooksPro respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. We collect photographs and selfies that you upload, voice recordings you create, and usage data through Firebase Analytics. Payment information is securely processed via RevenueCat — we do not store payment details on our servers.</p>
     
     <h2>2. How We Use Your Information</h2>
-    <p>Your photographs and voice recordings are used solely for the purpose of providing facial analysis, beauty recommendations, and voice coaching feedback. These media files are permanently deleted immediately after processing is complete. We use Firebase to send push notifications and analyze app usage patterns to improve your experience.</p>
+    <p>Your photographs and voice recordings are used solely to provide facial analysis, beauty recommendations, and voice coaching feedback. All media files are permanently deleted immediately after processing. We use Firebase to send push notifications and analyze usage patterns to improve your experience.</p>
     
     <h2>3. Data Storage & Deletion</h2>
-    <p>We implement appropriate technical measures to ensure the secure processing of your data. All photographs and voice recordings are permanently deleted immediately after processing is completed. Users may request deletion of their associated data by contacting us directly at our support email.</p>
+    <p>We employ strict technical measures to ensure the secure processing of your data. All photographs and voice recordings are permanently deleted after processing. You may request deletion of your data anytime by contacting us via our support email.</p>
     
     <h2>4. Third-Party Services</h2>
-    <p>We use RevenueCat for subscription management and Firebase for push notifications and analytics. We do not share your personal data with any third-party AI providers or analysis services beyond these necessary service providers.</p>
+    <p>We use RevenueCat for subscription management and Firebase for notifications and analytics. We do not share your personal data with any other third-party AI or analysis services beyond these providers.</p>
     
     <h2>5. Children's Privacy</h2>
-    <p>Our application is not intended for users under 10 years of age. We do not knowingly collect personal information from children under this age threshold.</p>
+    <p>Our app is not intended for users under 10 years of age. We do not knowingly collect personal data from children below this threshold.</p>
     
     <h2>6. Contact Us</h2>
-    <p>For any privacy concerns or data deletion requests, please contact us at ashfaqhiba7@gmail.com.</p>
+    <p>For any privacy concerns or data deletion requests, contact us at <a href="mailto:ashfaqhiba7@gmail.com">ashfaqhiba7@gmail.com</a>.</p>
     
     <p><strong>Developer:</strong> Hiba Ashfaq, Pakistan</p>
+
+    <a href="index.html" class="btn">Back to App</a>
+
+    <footer>
+      &copy; 2025 LooksPro. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
