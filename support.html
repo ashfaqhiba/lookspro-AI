@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>LooksPro Support</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LooksPro Support</title>
+  <style>
+    /* ===== Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ===== Body ===== */
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, rgba(40,40,50,1) 0%, rgba(25,25,30,1) 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      color: #fff;
+    }
+
+    /* ===== Glass Card ===== */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 50px 60px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Text ===== */
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      background: linear-gradient(90deg, #ff66b2, #66ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #66ccff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Button ===== */
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: linear-gradient(90deg, #66ccff, #ff66b2);
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      margin-top: 25px;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media (max-width: 600px) {
+      .glass-card {
+        padding: 35px 25px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="glass-card">
     <h1>LooksPro Support</h1>
-    <p>Contact us for support:</p>
-    <p>Email: <a href="mailto:ashfaqhiba7@gmail.com">ashfaqhiba7@gmail.com</a></p>
-    <p>We'll respond within 24 hours.</p>
+    <p>Need help or have a question?</p>
+    <p>Email us at:</p>
+    <p><a href="mailto:ashfaqhiba7@gmail.com">ashfaqhiba7@gmail.com</a></p>
+    <p>We’ll respond within <strong>24 hours</strong>.</p>
+    
+    <a href="index.html" class="btn">Back to App</a>
+    
+    <footer>
+      &copy; 2025 LooksPro. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
