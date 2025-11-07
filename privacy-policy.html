@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - LooksPro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== Apple & SEO Friendly Meta ===== -->
+  <title>LooksPro - Privacy Policy & Data Protection</title>
+  <meta name="description" content="Read the official Privacy Policy for LooksPro. Learn how your facial data, photos, and personal information are collected, stored, and deleted securely." />
+  <meta name="keywords" content="LooksPro, Privacy Policy, data security, facial analysis, AI photo app, user data, subscription privacy" />
+  <meta name="author" content="LooksPro by Hiba Ashfaq" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1b1b22" />
+
   <style>
-    /* ===== Reset ===== */
+    /* ===== Global Reset ===== */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* ===== Body ===== */
     body {
       font-family: "Poppins", sans-serif;
       background: linear-gradient(135deg, rgba(40,40,50,1) 0%, rgba(25,25,30,1) 100%);
-      color: #fff;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      color: #fff;
       padding: 40px 20px;
     }
 
-    /* ===== Glass Card ===== */
+    /* ===== Glass Container ===== */
     .glass-card {
       background: rgba(255, 255, 255, 0.08);
       border-radius: 20px;
       backdrop-filter: blur(16px) saturate(180%);
       -webkit-backdrop-filter: blur(16px) saturate(180%);
       border: 1px solid rgba(255, 255, 255, 0.2);
+      max-width: 850px;
       padding: 40px 50px;
-      max-width: 900px;
-      width: 100%;
       box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
       animation: fadeIn 1.2s ease;
+      overflow-y: auto;
+      max-height: 95vh;
     }
 
     @keyframes fadeIn {
@@ -43,7 +51,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ===== Headings ===== */
+    /* ===== Typography ===== */
     h1 {
       font-size: 2.2rem;
       text-align: center;
@@ -52,6 +60,12 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       letter-spacing: 1px;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+      color: rgba(255, 255, 255, 0.85);
     }
 
     h2 {
@@ -63,43 +77,8 @@
       padding-left: 10px;
     }
 
-    p {
-      line-height: 1.7;
-      margin-bottom: 15px;
-      color: rgba(255, 255, 255, 0.85);
-    }
-
     strong {
       color: #ffb3ec;
-    }
-
-    a {
-      color: #66ccff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* ===== Button ===== */
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 28px;
-      background: linear-gradient(90deg, #66ccff, #ff66b2);
-      border: none;
-      border-radius: 30px;
-      color: white;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-
-    .btn:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
     }
 
     /* ===== Footer ===== */
@@ -108,6 +87,18 @@
       margin-top: 30px;
       font-size: 0.9rem;
       color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* ===== Scroll Style ===== */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.2);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
     }
 
     @media (max-width: 600px) {
@@ -123,29 +114,43 @@
 <body>
   <div class="glass-card">
     <h1>Privacy Policy</h1>
-    <p><strong>Last Updated:</strong> 2025</p>
-    
-    <h2>1. Information We Collect</h2>
-    <p>LooksPro respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. We collect photographs and selfies that you upload, voice recordings you create, and usage data through Firebase Analytics. Payment information is securely processed via RevenueCat — we do not store payment details on our servers.</p>
-    
-    <h2>2. How We Use Your Information</h2>
-    <p>Your photographs and voice recordings are used solely to provide facial analysis, beauty recommendations, and voice coaching feedback. All media files are permanently deleted immediately after processing. We use Firebase to send push notifications and analyze usage patterns to improve your experience.</p>
-    
-    <h2>3. Data Storage & Deletion</h2>
-    <p>We employ strict technical measures to ensure the secure processing of your data. All photographs and voice recordings are permanently deleted after processing. You may request deletion of your data anytime by contacting us via our support email.</p>
-    
-    <h2>4. Third-Party Services</h2>
-    <p>We use RevenueCat for subscription management and Firebase for notifications and analytics. We do not share your personal data with any other third-party AI or analysis services beyond these providers.</p>
-    
-    <h2>5. Children's Privacy</h2>
-    <p>Our app is not intended for users under 10 years of age. We do not knowingly collect personal data from children below this threshold.</p>
-    
-    <h2>6. Contact Us</h2>
-    <p>For any privacy concerns or data deletion requests, contact us at <a href="mailto:ashfaqhiba7@gmail.com">lookspro.ai@gmail.com</a>.</p>
-    
-    <p><strong>Developer:</strong> Hiba Ashfaq, Pakistan</p>
+    <p><strong>Updated Date:</strong> 2025</p>
 
-    <a href="index.html" class="btn">Back to App</a>
+    <h2>1. Introduction</h2>
+    <p>Welcome to LooksPro. We respect your privacy and are committed to protecting your personal data and facial image information. This policy explains how we collect, use, store, and disclose your data when you use the App.</p>
+
+    <h2>2. What Data We Collect & Why</h2>
+    <p><strong>Face/Photo Data:</strong> When you upload or take a photograph for analysis, we use that image solely to provide you with aesthetic feedback and personalized recommendations.</p>
+    <p><strong>Basic Personal Information:</strong> We may collect minimal data such as gender for accurate AI-based results.</p>
+    <p><strong>Usage Data:</strong> We collect information on how you interact with the App (features used, session length, errors) to improve performance and user experience.</p>
+
+    <h2>3. How We Use Your Data</h2>
+    <p>• To provide the main service: analyzing images and offering recommendations.</p>
+    <p>• To improve and enhance our algorithms and App functionality.</p>
+    <p>• For security, fraud prevention, and to comply with legal obligations.</p>
+
+    <h2>4. Data Retention & Deletion</h2>
+    <p>Your uploaded photos and analysis data are retained only as long as needed for the service (for 15 days) and then <strong>automatically deleted</strong>. We do not keep your face images indefinitely or use them for other purposes.</p>
+
+    <h2>5. Data Sharing & Disclosure</h2>
+    <p>We do <em>not</em> sell, rent, or share your face data or personal information to third parties for marketing or advertising. We may disclose data only when required by law or legal process.</p>
+
+    <h2>6. Data Security</h2>
+    <p>We employ industry-standard security measures (such as encryption in transit and secure storage) to protect your data from unauthorized access or misuse. However, no system is perfectly secure, so please understand a residual risk remains.</p>
+
+    <h2>7. Your Rights & Controls</h2>
+    <p>• You can request to access, correct or delete your data at any time by contacting us or using the in-App settings.</p>
+    <p>• You can withdraw your consent or discontinue use of the App whenever you like.</p>
+    <p>• If you are a parent or guardian and believe your child has used the App without consent, please contact us and we’ll take prompt action.</p>
+
+    <h2>8. Children’s Privacy</h2>
+    <p>The App is not intended for use by children under 10 years old. We do not knowingly collect personal information from children without parental consent. If you become aware of a child under this age using the App, please contact us.</p>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update this policy from time to time. We will post the revised policy with the updated “Last Updated” date. Continued use of the App after changes means you accept the revised policy.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding your data or this policy, please contact us at: <strong>lookspro.ai@gmail.com</strong>.</p>
 
     <footer>
       &copy; 2025 LooksPro. All rights reserved.
